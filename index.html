@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Septina Nurfajar Azahrah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('background1.jpg') no-repeat center center/cover;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Flexbox untuk header */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 123, 255, 0.8);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Flexbox untuk menu navigasi */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* CSS Grid untuk layout utama */
+        main {
+            display: grid;
+            grid-template-columns: 1fr; /* Satu kolom untuk tampilan mobile */
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #e9ecef;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            display: flex; /* Flexbox untuk artikel */
+            align-items: center;
+        }
+
+        article i {
+            font-size: 36px;
+            color: #007bff;
+            margin-right: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries untuk responsivitas */
+        @media (max-width: 1024px) {
+            main {
+                grid-template-columns: 1fr; /* Satu kolom untuk tablet dan mobile */
+            }
+        }
+
+        @media (min-width: 600px) {
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            main {
+                grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk desktop */
+            }
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Grid untuk galeri */
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Septina Nurfajar Azahrah</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#education">Riwayat Pendidikan</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Selamat datang di portofolio saya! Saya Septi adalah Mahasiswa Semester 4 Sistem Informasi. Saya memiliki kemampuan mengoperasikan Jaringan, saya juga memiliki sifat pekerja keras, rajin, dan suka belajar hal baru.</p>
+            <img src="img/septi.jpg" alt="Tentang" width="200">
+        </section>
+
+        <section id="education">
+            <h2>Riwayat Pendidikan</h2>
+            <article>
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h3>Universitas Internasional Semen Indonesia</h3>
+                    <p>S1 Program Studi Sistem Informasi, Semester 4</p>
+                </div>
+            </article>
+            <article>
+                <i class="fas fa-school"></i>
+                <div>
+                    <h3>SMK Negeri 2 Lamongan</h3>
+                    <p>Jurusan Teknik Komputer dan Jaringan, Lulus (2023)</p>
+                </div>
+            </article>
+        </section> 
+
+        <section id="video">
+            <h2>Video</h2>
+            <video width="320" height="240" controls>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="audio">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="https://pfst.cf2.poecdn.net/base/audio/a554b893f8ecd48bdbda47cda2fdaf59bd5fcc9bbe3b609da424769876cc90c8" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="gallery">
+            <h2>Galeri Foto</h2>
+            <div class="gallery">
+                <img src="Galeri Foto/gallery image 1.jpg" alt="Gallery Image 1">
+                <img src="Galeri Foto/gallery image 2.jpg" alt="Gallery Image 2">
+                <img src="Galeri Foto/gallery image 3.jpg" alt="Gallery Image 3">
+                <img src="Galeri Foto/gallery image 4.jpg" alt="Gallery Image 4">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Jika Anda memiliki pertanyaan, saran, atau ingin berdiskusi lebih lanjut, jangan ragu untuk menghubungi saya melalui formulir di bawah ini. Saya akan berusaha untuk merespons secepatnya!</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Septina. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
